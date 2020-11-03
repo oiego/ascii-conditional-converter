@@ -5,6 +5,7 @@ public class Principal {
 
 		System.out.println("Char 'A' must print 1000, 'C' must print 3000, so on \nChar 'a' must print 1 'b' must print 2\n'exit' must quit app");
 		for (; true;) {
+			@SuppressWarnings("resource")
 			Scanner scan = new Scanner(System.in);
 			System.out.print("enter instruction->");
 			String a = scan.nextLine();
